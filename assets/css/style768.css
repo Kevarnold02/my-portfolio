@@ -63,7 +63,7 @@ p:last-child {
 	margin-bottom: 0;
 }
 h1, h2, h3 {
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', Times, "Times New Roman", serif;
 	font-weight: 700;
 	color: #4aaaa5;
 }
@@ -95,7 +95,7 @@ h3 {
 	height: 90px;
 	background: #4aaaa5;
 	float: left;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', Times, "Times New Roman", serif;
 	text-align: center;
 	line-height: 90px;
 	color: #fff;
@@ -177,7 +177,7 @@ h3,
 }
 .auth-image {	
 	width: 200px;
-	height: auto;
+	/*height: auto;*/
 	margin-top: 10px;
 	float: left;
 	margin-right: 25px;
@@ -218,13 +218,86 @@ input[type=submit] {
 	cursor: pointer;
 }
 
+
+
+
 @media screen and (max-width: 768px) {
 
 	#logo {
-		width: 40%;
+		width: 250px;
+		height: 90px;
+		background: #4aaaa5;
+		float: left;
+		font-family: 'Georgia', Times, "Times New Roman", serif;
+		text-align: center;
+		line-height: 90px;
+		color: #fff;
+		font-weight: 700;
+		font-size: 30px;
+		text-decoration: none;
+		margin-left: 20px;
 	}
 
-	/*nav {
+	
+
+	.auth-image {
+		/*max-width: 100%;*/
+		width: 40%;
+	}
+	
+	#main-container {
+		max-width: 90%;
+		width: 100%;
+		padding-top: 170px;
+		padding-left: -40px;
+	}
+
+	.main-section {
+		margin: 0px 20px 20px 25px;
+	}
+
+
+	.container {
+		margin-left: 20px;
+		max-width: 90%;
+		
+	}
+	.sidebar {
+		background: #fff;
+		padding: 30px;
+		width: 100%;
+		max-width: 97%;
+		float: right;
+		border: 1px solid #ddd;
+		margin-right: -4px;
+	}
+	/*h3,
+	.sidebar h2 {
+		border-bottom: 2px solid #eee;
+		padding-bottom: 20px;
+		margin-bottom: 15px;
+		line-height: 22px;
+	}
+	.social {
+		width: 62px;
+		height: 62px;
+		margin-top: 8px;
+		margin-right: 5px;
+	}
+	.social:last-child {
+		margin-right: 0;
+	}*/
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+	#logo {
+		width: 100%;
+	}
+
+	nav {
 	    border-left: 0 none;
 	    float: left;
 	    padding-left: 60px;
@@ -234,7 +307,10 @@ input[type=submit] {
 	nav a {
 		border: none;
 		padding-left: 60px;
-	}*/
+	}
+	.main-section {
+		width: 100%;
+	}
 
 
 	#main-container {
@@ -246,32 +322,20 @@ input[type=submit] {
 
 	.auth-image {
 	    max-width: 100%;
-	    width: 40%;
 	    /*height: auto;*/
 	    margin-top: 10px;
 	    /* float: left; */
 	    margin-right: 25px;
 	}
 
-	.main-section {
-		margin: 0px 20px 20px 25px;
-	}
-
-	.container {
-		margin-left: 20px;
-		max-width: 90%;
-		
-	}
-
-
 	.sidebar {
 		background: #fff;
 		padding: 30px;
 		/*width: 100%;*/
-		max-width: 97%;
+		max-width: 100%;
 		/*float: right;*/
 		border: 1px solid #ddd;
-		margin-bottom: 20px;
+		margin: 20px;
 	}
 	h3,
 	.sidebar h2 {
@@ -291,75 +355,41 @@ input[type=submit] {
 	}
 	}
 
-@media screen and (max-width: 640px) {
 
-	#logo {
-		width: 100%;
-	}
+/*@media screen and (max-width: 960px) {
 
-	nav {
-	    border-left: 0 none;
-	    float: left;
-	    padding-left: 60px;
-	    margin-top: 10px;
-	    margin-bottom: 4px;
-	}
-	nav a {
-		border: none;
-		padding-left: 60px;
-	}
+.container {
+	margin-left: 20px;
+
+}
+.main-section {
+	width: 60%;
+}
+nav {
+	margin-right: 30px;
+}
+.auth-image {
+	width: 100%;
+}
+.sidebar {
+	margin-right: 26px;
+    width: 30%;
+}
+
+#logo {
+	width: 250px;
+	height: 90px;
+	background: #4aaaa5;
+	float: left;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	text-decoration: none;
+	
+}
 
 
-	#main-container {
-		max-width: 90%;
-		width: 100%;
-		padding-top: 170px;
-		padding-left: -40px;
-	}
-
-	.main-section {
-		margin: 0px;
-	}
-
-	.auth-image {
-	    max-width: 100%;
-	    width: 100%;
-	    /*height: auto;*/
-	    margin-top: 10px;
-	    /* float: left; */
-	    margin-right: 25px;
-	}
-	.container {
-		width: 100%;
-		max-width: 960px;
-		margin: 0 auto;
-		clear: both;
-	}
-	.sidebar {
-		background: #fff;
-		padding: 30px;
-		/*width: 100%;*/
-		max-width: 100%;
-		/*float: right;*/
-		border: 1px solid #ddd;
-		margin-bottom: 20px;
-		margin-top: 20px;
-	}
-	/*h3,
-	.sidebar h2 {
-		border-bottom: 2px solid #eee;
-		padding-bottom: 20px;
-		margin-bottom: 15px;
-		line-height: 22px;
-	}
-	.social {
-		width: 62px;
-		height: 62px;
-		margin-top: 8px;
-		margin-right: 5px;
-	}
-	.social:last-child {
-		margin-right: 0;
-	}*/
-	}
-
+}*/

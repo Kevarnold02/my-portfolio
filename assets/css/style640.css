@@ -239,9 +239,9 @@ input[type=submit] {
 
 	.auth-image {
 		/*max-width: 100%;*/
-		width: 100%;
+		width: 40%;
 	}
-
+	
 	#main-container {
 		/*max-width: 90%;*/
 		width: 100%;
@@ -304,6 +304,7 @@ input[type=submit] {
 	}
 
 	.auth-image {
+	    max-width: 100%;
 	    width: 100%;
 	    /*height: auto;*/
 	    margin-top: 10px;
